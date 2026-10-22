@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Minhaj Khan – Backend Developer</title>
+<meta name="description" content="Minhaj Khan builds resilient Python backends from concept to production: concurrent servers, secure auth, Docker and CI/CD, and applied ML.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{fontFamily:{head:['"Bricolage Grotesque"','Segoe UI','system-ui','sans-serif'],sans:['"IBM Plex Sans"','Segoe UI','system-ui','sans-serif'],mono:['"IBM Plex Mono"','ui-monospace','Menlo','monospace']}}}}
+</script>
+<style type="text/tailwindcss">
+@layer components{
+  .card{@apply rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 flex flex-col gap-4}
+  .h2{@apply font-head font-bold text-3xl sm:text-4xl tracking-tight text-zinc-50}
+  .sub{@apply mt-3 max-w-2xl text-zinc-400}
+  .chip{@apply rounded-full bg-zinc-800 px-3 py-1 text-sm text-zinc-200}
+  .tag{@apply w-fit rounded-md border border-emerald-400/40 bg-emerald-400/10 px-2 py-0.5 text-xs font-medium text-emerald-300}
+  .btn{@apply inline-flex items-center rounded-lg px-5 py-3 font-medium transition}
+  .flow{@apply flex flex-wrap items-center gap-y-2 font-mono text-xs text-zinc-300}
+  .flow li{@apply rounded border border-zinc-700 bg-zinc-950 px-2 py-1}
+  .flow li+li::before{content:"";}
+  .flow li:not(:last-child)::after{content:"";}
+}
+</style>
+<style>
+:root{box-sizing:border-box;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{background:#09090b;color:#d4d4d8;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#09090b;z-index:40}
+:focus-visible{outline:3px solid #34d399;outline-offset:3px;border-radius:6px}
+.flow{gap:0}.flow li{margin-right:1.1rem;position:relative}
+.flow li:not(:last-child)::after{content:"";position:absolute;right:-.85rem;top:50%;width:.6rem;height:.6rem;border-top:2px solid #34d399;border-right:2px solid #34d399;transform:translateY(-50%) rotate(45deg) scale(.8);transform-origin:center}
+.pm dt{font-weight:500;color:#34d399}
+.pm dd{margin:.25rem 0 1.25rem;color:#a1a1aa}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="font-sans text-base leading-relaxed">
+<a href="#main" class="absolute -left-[999px] top-2 z-50 rounded bg-emerald-400 px-4 py-2 font-medium text-zinc-950 focus:left-2">Skip to content</a>
+
+<header class="sticky z-30 border-b border-zinc-800 bg-zinc-950/85 backdrop-blur" style="top:env(safe-area-inset-top,0px)">
+  <div class="mx-auto flex min-h-[60px] max-w-5xl items-center justify-between gap-4 px-5">
+    <a href="#top" class="font-head text-lg font-bold text-zinc-50 max-[420px]:hidden">Minhaj Khan</a>
+    <nav aria-label="Primary" class="max-[420px]:mx-auto">
+      <ul class="flex gap-1 text-sm font-medium text-zinc-400 sm:text-[0.95rem]">
+        <li><a class="block rounded-lg px-2.5 py-2 hover:bg-zinc-800 hover:text-zinc-50" href="#architecture">Architecture</a></li>
+        <li><a class="block rounded-lg px-2.5 py-2 hover:bg-zinc-800 hover:text-zinc-50" href="#resilience">Resilience</a></li>
+        <li><a class="block rounded-lg px-2.5 py-2 hover:bg-zinc-800 hover:text-zinc-50" href="#toolkit">Toolkit</a></li>
+        <li><a class="block rounded-lg px-2.5 py-2 hover:bg-zinc-800 hover:text-zinc-50" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top" class="mx-auto max-w-5xl px-5 pb-16 pt-16 sm:pt-24">
+    <h1 class="max-w-4xl font-head text-4xl font-bold leading-[1.05] tracking-tight text-zinc-50 sm:text-6xl">Building Resilient Backend Architectures from Concept to Production.</h1>
+    <p class="mt-6 max-w-2xl text-lg text-zinc-400">I’m Minhaj Khan, a Python-first backend developer. I build concurrent servers, secure them with JWT and AES, ship them with Docker and CI/CD, and add machine learning where it earns its place. I want to join a small team where I own features end to end.</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a class="btn bg-emerald-400 text-zinc-950 hover:bg-emerald-300" href="mailto:minhajmkhan86@gmail.com">Contact me</a>
+      <a class="btn border border-zinc-600 text-zinc-100 hover:bg-zinc-800" href="#architecture">See the architecture</a>
+    </div>
+    <p class="mt-6 text-sm text-zinc-500">Chennai, India. Intern in full stack development and AI engineering at iMobisoft. B.Tech in Computer Science and Engineering, SRM Institute of Science and Technology.</p>
+  </section>
+
+  <section id="architecture" class="border-t border-zinc-800 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-5">
+      <h2 class="h2">Architecture &amp; projects</h2>
+      <p class="sub">Each card is a system: what it does, how the parts connect, and what I own in it.</p>
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        <article class="card" aria-labelledby="a1">
+          <span class="tag">Learning focus</span>
+          <h3 id="a1" class="font-head text-xl font-bold text-zinc-50">Serverless AWS infrastructure</h3>
+          <ol class="flow" aria-label="Target architecture"><li>API</li><li>Lambda</li><li>DynamoDB</li></ol>
+          <ul class="list-disc space-y-2 pl-5 text-zinc-400">
+            <li>Completed AWS Academy Machine Learning Foundations.</li>
+            <li>Next step is building Lambda and DynamoDB services hands-on. I’m seeking a team where I can do that alongside experienced engineers.</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="a2">
+          <span class="tag">Built and shipped</span>
+          <h3 id="a2" class="font-head text-xl font-bold text-zinc-50">Concept-to-production ownership</h3>
+          <ol class="flow" aria-label="Chat server flow"><li>Client</li><li>TCP server</li><li>JWT</li><li>AES-256</li></ol>
+          <p class="text-zinc-400">Multi-Client GUI Chat Server, November 2023.</p>
+          <ul class="list-disc space-y-2 pl-5 text-zinc-400">
+            <li>Designed a real-time Python server handling concurrent clients over TCP sockets.</li>
+            <li>Secured it with JWT authentication and AES-256 encryption.</li>
+            <li>Containerized it with Docker, added CI/CD, and wrote tests before deployment.</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="a3">
+          <span class="tag">Applied AI</span>
+          <h3 id="a3" class="font-head text-xl font-bold text-zinc-50">AI features &amp; real-time inference</h3>
+          <ol class="flow" aria-label="ML pipeline"><li>Data</li><li>Model</li><li>Validate</li><li>Explain</li></ol>
+          <ul class="list-disc space-y-2 pl-5 text-zinc-400">
+            <li><strong class="font-medium text-zinc-200">Fraud detection:</strong> 99%+ accuracy and 0.91 AUC-ROC, validated with stratified k-fold.</li>
+            <li><strong class="font-medium text-zinc-200">Internet-use classifier:</strong> 89% accuracy, with SHAP explanations for non-technical readers.</li>
+            <li><strong class="font-medium text-zinc-200">Drowsiness detection:</strong> live video through OpenCV and Dlib at 90%+ accuracy.</li>
+          </ul>
+        </article>
+      </div>
+      <article class="card mt-5 sm:flex-row sm:items-center sm:justify-between" aria-labelledby="a4">
+        <div>
+          <h3 id="a4" class="font-head text-lg font-bold text-zinc-50">Live website: DailyScenes</h3>
+          <p class="mt-1 max-w-2xl text-zinc-400">A news analysis site that compares how different outlets framed the same story and shows the evidence behind each framing.</p>
+        </div>
+        <a class="btn shrink-0 bg-emerald-400 text-zinc-950 hover:bg-emerald-300" href="https://dailyscenes.app" target="_blank" rel="noopener" aria-label="Visit dailyscenes.app (opens in a new tab)">Visit dailyscenes.app</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="resilience" class="border-t border-zinc-800 bg-zinc-900/40 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-5">
+      <h2 class="h2">Resilience &amp; post-mortems</h2>
+      <p class="sub">What happens when real input is messier than the demo, written up the way a team would review it.</p>
+      <article class="card mt-10" aria-labelledby="pm1">
+        <h3 id="pm1" class="font-head text-xl font-bold text-zinc-50">Driver drowsiness detection: live video that never stays clean</h3>
+        <dl class="pm mt-2 grid gap-x-10 sm:grid-cols-2">
+          <div><dt>What the system had to do</dt><dd>Process live video in real time with OpenCV and Dlib and decide whether a driver was drowsy.</dd></div>
+          <div><dt>What made it hard</dt><dd>Live input varies constantly, so a pipeline that works on one clean clip is not a working system.</dd></div>
+          <div><dt>What I changed</dt><dd>I kept testing against varied real-world conditions and iterating on the system, instead of tuning for one best case.</dd></div>
+          <div><dt>Outcome</dt><dd>The system reached 90%+ accuracy under those varied conditions.</dd></div>
+        </dl>
+        <p class="border-t border-zinc-800 pt-4 text-zinc-400"><strong class="font-medium text-zinc-200">What I carried forward:</strong> on the chat server I wrote and ran test cases before deployment, so I learned how a system behaves under unexpected user behavior and edge cases before users find them.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="toolkit" class="border-t border-zinc-800 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-5">
+      <h2 class="h2">Technical toolkit</h2>
+      <p class="sub">Python is my strongest language.</p>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        <div class="card">
+          <h3 class="font-head text-lg font-bold text-zinc-50">Core languages</h3>
+          <ul class="flex flex-wrap gap-2"><li class="chip border border-emerald-400/50">Python</li><li class="chip">JavaScript</li><li class="chip">TypeScript</li><li class="chip">Node.js</li><li class="chip">SQL</li><li class="chip">C</li><li class="chip">C++</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="font-head text-lg font-bold text-zinc-50">Cloud &amp; serverless</h3>
+          <ul class="flex flex-wrap gap-2"><li class="chip">AWS Academy ML Foundations</li><li class="chip">Docker</li><li class="chip">CI/CD</li><li class="chip">Linux</li><li class="chip">Git &amp; GitHub</li><li class="chip">Jira</li></ul>
+          <p class="text-sm text-zinc-500">Learning next: AWS Lambda and DynamoDB.</p>
+        </div>
+        <div class="card">
+          <h3 class="font-head text-lg font-bold text-zinc-50">Databases &amp; AI</h3>
+          <ul class="flex flex-wrap gap-2"><li class="chip">SQL</li><li class="chip">Scikit-learn</li><li class="chip">Pandas</li><li class="chip">NumPy</li><li class="chip">OpenCV</li><li class="chip">Dlib</li><li class="chip">SHAP</li></ul>
+        </div>
+      </div>
+      <p class="mt-5 text-zinc-400">Backend and security: REST APIs, GraphQL, WebSocket, TCP sockets, JWT authentication, AES encryption, concurrency, object-oriented design.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="border-t border-zinc-800 bg-zinc-900/60 py-14">
+  <div class="mx-auto max-w-5xl px-5">
+    <h2 class="h2">Let’s build something reliable</h2>
+    <ul class="mt-6 space-y-2">
+      <li>Email: <a class="font-medium text-emerald-300 underline underline-offset-4 hover:text-emerald-200" href="mailto:minhajmkhan86@gmail.com">minhajmkhan86@gmail.com</a></li>
+      <li>GitHub: <a class="font-medium text-emerald-300 underline underline-offset-4 hover:text-emerald-200" href="https://github.com/m1haj" rel="noopener">github.com/m1haj</a></li>
+      <li>LinkedIn: <a class="font-medium text-emerald-300 underline underline-offset-4 hover:text-emerald-200" href="https://linkedin.com/in/minhajmkhan" rel="noopener">linkedin.com/in/minhajmkhan</a></li>
+      <li>Phone: <a class="font-medium text-emerald-300 underline underline-offset-4 hover:text-emerald-200" href="tel:+918899634235">+91 8899634235</a></li>
+    </ul>
+    <p class="mt-8 text-sm text-zinc-500">Minhaj Khan, Chennai, Tamil Nadu</p>
+  </div>
+</footer>
+</body>
+</html>
